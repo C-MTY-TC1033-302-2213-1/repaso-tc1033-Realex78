@@ -49,7 +49,7 @@ double Triangulo::perimetro() {
 
 double Triangulo::area() {
 	return (1.0 / 2.0) * 
-		(((vertice1.getX() * vertice2.getY()) + (vertice2.getX() * vertice3.getY()) + (vertice3.getX() * vertice1.getY())) 
+		abs(((vertice1.getX() * vertice2.getY()) + (vertice2.getX() * vertice3.getY()) + (vertice3.getX() * vertice1.getY())) 
 		- ((vertice1.getX() * vertice3.getY()) + (vertice3.getX() * vertice2.getY()) + (vertice2.getX() * vertice1.getY())));
 }
 
